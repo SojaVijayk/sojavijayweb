@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Image & text</title>
+</head>
+<body>
+<h1 id="txt"> Technology </h1>
+<img id="img1" onmouseover="myfunction1()" onmouseout="myfunction2()" src="/home/ksb/SOJA/Sojaweb/html/co1.jpg">
+<script>
+function myfunction1()
+{
+	document.getElementById("img1").src="/home/ksb/SOJA/Sojaweb/html/com1.jpeg";
+	document.getElementById("txt").innerHTML="com1";
+}
+function myfunction2()
+{
+	document.getElementById("img1").src="/home/ksb/SOJA/Sojaweb/html/co1.jpg";
+	document.getElementById("txt").innerHTML="com2";
+}
+</script>
+</body>
+</html>
