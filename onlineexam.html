@@ -1,0 +1,112 @@
+<html>
+<head>
+<script>
+function exam() {
+  var m = 0;
+  
+  if (document.examForm.one.value == "b tag") {
+    m = m + 1;
+  }
+ if (document.examForm.two.value == "6") {
+    m = m + 1;
+  }
+ if (document.examForm.three.value == "u tag") {
+    m = m + 1;
+  }
+  if (document.examForm.four.value == "<!----comment----") {
+    m = m + 1;
+  }
+  if (document.examForm.five.value == "img") {
+    m = m + 1;
+  }
+  if (document.examForm.six.value == "dd") {
+    m = m + 1;
+  }
+  if (document.examForm.seven.value == "html tag") {
+    m = m + 1;
+  }
+  if (document.examForm.eight.value == "tr tag") {
+    m = m + 1;
+  }
+  if (document.examForm.nine.value == "alt tag") {
+    m = m + 1;
+  }
+  if (document.examForm.ten.value == "color") {
+    m = m + 1;
+  }
+  alert("Thank You for taking the online exam! \nYour score is: " + m + " out of 10");
+  return false;
+}
+</script>
+</head>
+<body bgcolor="pink">
+<form name="examForm" onsubmit="return exam()" method="get">
+<h2><center><u>Online Exam </u></center></h2>
+Enter Your Name: <input type="text" name="nm"><br><br>
+Enter Your Stream: <input type="text" name="st"><br><br>
+<p>
+1) Which tag is used for making any text bold?<br>
+ <input type="radio" name="one" value="p tag"> p tag<br>
+ <input type="radio" name="one" value="b tag"> b tag<br>
+ </p>
+
+<p>
+2) How many heading tags are there in HTML?<br>
+ <input type="radio" name="two" value="5"> 5<br>
+ <input type="radio" name="two" value="6"> 6<br>
+</p>
+
+<p>
+3) Which tag is used to underline the text?<br>
+ <input type="radio" name="three" value="u tag"> u tag<br>
+ <input type="radio" name="three" value="h1"> h1<br>
+</p>
+
+<p>
+4)What is the correct syntax to write an HTML comment?<br>
+<input type="radio" name="four" value="<!----comment----">!----comment----<br>
+ <input type="radio" name="four" value="#comment">#comment <br>
+ </p>
+ 
+ <p>
+5)What tag is used to render an image on a webpage?<br>
+ <input type="radio" name="five" value="image">image<br>
+ <input type="radio" name="five" value="img">img <br>
+ </p>
+ 
+ <p>
+ 6)Which HTML element is used to define description data?<br>
+ <input type="radio" name="six" value="ol">ol<br>
+ <input type="radio" name="six" value="dd">dd<br>
+ </p>
+ 
+ <p>
+7)Which HTML tag is called the root element of an HTML document?<br>
+ <input type="radio" name="seven" value="html tag">html tag<br>
+ <input type="radio" name="seven" value="head tag">head tag<br>
+ </p>
+ 
+ <p>
+ 8)Which of the following tags is used to add a row to a table in HTML?<br>
+ <input type="radio" name="eight" value="th tag">th tag<br>
+ <input type="radio" name="eight" value="tr tag">tr tag<br>
+ </p>
+ 
+ <p>
+ 9)Which property allows an image link to show a text label?<br>
+ <input type="radio" name="nine" value="str tag">str tag<br>
+ <input type="radio" name="nine" value="alt tag">alt tag<br>
+ </p>
+ 
+ <p>
+ 10)Which property is used to set colors in HTML?<br>
+ <input type="radio" name="ten" value="color">color<br>
+ <input type="radio" name="ten" value="font-color">font-color<br>
+ </p>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset"/><br>
+</p>
+</form>
+</body>
+</html>
+
